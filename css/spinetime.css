@@ -1,0 +1,85 @@
+/**********************************************************
+GENERAL
+**********************************************************/
+
+/**********************************************************
+GRID CONTAINER
+**********************************************************/
+
+.grid-container {
+    width : 100%;
+    max-width : 1200px; 
+}
+
+/**********************************************************
+ROW
+**********************************************************/
+
+/*-- cleafix hack -- */ 
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+/**********************************************************
+COLUMN
+**********************************************************/
+
+/*-- prevent column collapse -- */ 
+[class*='col-'] {
+    float: left;
+    min-height: 1px; 
+}
+
+.col-1{
+    width: 8.333%; 
+}
+.col-2{
+    width: 16.666%; 
+}
+.col-3{
+    width: 24.999%; 
+}
+.col-4{
+    width: 33.332%;
+}
+.col-5{
+    width: 41.665%;
+}
+.col-6{
+    width: 49.998%;
+}
+.col-7{
+    width: 58.331%; 
+}
+.col-8{
+    width: 66.664%; 
+}
+.col-9{
+    width: 74.997%; 
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.663%;
+}
+.col-12{
+    width: 100%;
+}
+
+
+/*-- some extra column content styling for display --*/
+.outline, .outline *{
+    outline: 1px solid #2f4f4f; 
+}
+
+[class*='col-'] > p {
+ background-color: #d6d6d6; 
+ padding: 0;
+ margin: 0;
+ text-align: center; 
+ color: white; 
+}
